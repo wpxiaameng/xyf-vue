@@ -328,6 +328,9 @@ export default {
               message: "提交成功",
               type: "success",
             });
+            // 提交成功之后清空页面，但openid保留
+            this.params = {};
+            this.params.openid = res.obj[1];
           } else {
             this.showErrMsg(res.msg);
           }
