@@ -249,12 +249,16 @@ export default {
         this.showErrMsg("客户名称不能为空!");
         return;
       }
+      if (this.isEmpty(this.params.code)) {
+        this.showErrMsg("客户编码不能为空!");
+        return;
+      }
       if (this.checkLicense(this.params.licenseNo)) {
         this.showErrMsg("营业执照格式错误!");
         return;
       }
       if (this.isEmpty(this.params.idNumber)) {
-        this.showErrMsg("请先填身份证");
+        this.showErrMsg("请填写身份证");
         return;
       } else {
         if (!this.checkIdCard(this.params.idNumber)) {
