@@ -1,7 +1,6 @@
 'use strict'
-const merge = require('webpack-merge')
-const devEnv = require('./dev.env')
-
-module.exports = merge(devEnv, {
-  NODE_ENV: '"testing"'
-})
+module.exports = {
+  NODE_ENV: '"testing"',
+  API_URL: '"http://sms.test.yonfer.com"',
+  APPID: '"wx9c1befcb89027ab5"'
+}
