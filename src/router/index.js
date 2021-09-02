@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import AddCustomer from '@/components/views/AddCustomer'
+import CustomerIndex from '@/components/views/CustomerIndex'
 
 Vue.use(Router)
 
@@ -16,12 +16,12 @@ const router = new Router({
       component: Home
     },
     {
-      path: '/addCustomer',
-      name: 'addCustomer',
+      path: '/customerIndex',
+      name: 'customerIndex',
       meta: {
         title: '新增客户'
       },
-      component: AddCustomer
+      component: CustomerIndex
     }
   ]
 })

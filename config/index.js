@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       '/api': {
         // target: 'http://sms.test.yonfer.com',//测试接口域名
-        target: 'http://192.168.1.103:8080/SMS',//本地接口域名
+        target: 'http://192.168.1.107:8080/SMS',//本地接口域名
         changeOrigin: true,//是否跨域
         pathRewrite: {
             '^/api': ''//重写接口,后面可以使重写的新路径，一般不做更改
@@ -22,7 +22,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: '192.168.1.103', // can be overwritten by process.env.HOST
+    host: '192.168.1.107', // can be overwritten by process.env.HOST
     port: 8088, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
